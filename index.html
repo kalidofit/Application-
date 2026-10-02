@@ -138,20 +138,18 @@
             <section class="space-y-6">
                 <!-- Status Badge -->
                 <div class="inline-flex items-center gap-2 bg-[#121218]/90 border border-gray-800 rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide text-gray-300">
-                    <svg class="w-3.5 h-3.5 text-[#88FF00]" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.57l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.57l7-10a1 1 0 011.12-.384z" clip-rule="evenodd"></path>
-                    </svg>
-                    <span data-key="hero_badge" class="uppercase tracking-wider">🔥 LIMITED SPOTS • NOW ACCEPTING NEW CLIENTS</span>
+                    <span class="w-2 h-2 rounded-full bg-[#88FF00] animate-pulse"></span>
+                    <span data-key="hero_badge" class="uppercase tracking-wider">LIMITED SPOTS • NOW ACCEPTING NEW CLIENTS</span>
                 </div>
 
                 <!-- Hero Headline -->
-                <h1 class="font-heading text-[40px] leading-[1.05] font-black uppercase tracking-tight">
+                <h1 class="font-heading text-[38px] leading-[1.08] font-black uppercase tracking-tight">
                     <span data-key="hero_title1" class="text-white block">RISE ABOVE AVERAGE.</span>
                     <span data-key="hero_title2" class="text-[#FF0033] block">BECOME ELITE.</span>
                 </h1>
 
                 <!-- Subtitle -->
-                <p data-key="hero_sub" class="text-gray-300 text-base font-medium leading-snug">
+                <p data-key="hero_sub" class="text-gray-300 text-sm font-medium leading-relaxed">
                     Premium 1-on-1 coaching built for anyone ready to build an elite physique and unshakeable mindset.
                 </p>
 
@@ -248,6 +246,32 @@
                 </div>
             </section>
 
+            <!-- How It Works Section (3 Steps) -->
+            <section class="space-y-6 pt-4 border-t border-gray-800/60">
+                <div>
+                    <h2 class="font-heading text-2xl font-black uppercase leading-tight">
+                        <span data-key="step_h1">HOW IT WORKS</span><br><span data-key="step_h2" class="text-[#FF0033]">3 SIMPLE STEPS</span>
+                    </h2>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="glass-card rounded-2xl p-4 space-y-1 border-l-4 border-l-[#FF0033]">
+                        <h3 data-key="step1_t" class="font-bold text-xs text-white uppercase tracking-wider">1. Assessment & Goal Discovery</h3>
+                        <p data-key="step1_d" class="text-[11px] text-gray-400 leading-relaxed">We analyze your current health status, lifestyle, and targets in detail.</p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-4 space-y-1 border-l-4 border-l-[#FF0033]">
+                        <h3 data-key="step2_t" class="font-bold text-xs text-white uppercase tracking-wider">2. Custom Program Design</h3>
+                        <p data-key="step2_d" class="text-[11px] text-gray-400 leading-relaxed">Tailored workout and nutrition planning designed specifically around your daily routine.</p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-4 space-y-1 border-l-4 border-l-[#88FF00]">
+                        <h3 data-key="step3_t" class="font-bold text-xs text-white uppercase tracking-wider">3. Execution & Ongoing Tracking</h3>
+                        <p data-key="step3_d" class="text-[11px] text-gray-400 leading-relaxed">Continuous check-ins and support ensuring you hit your transformation targets.</p>
+                    </div>
+                </div>
+            </section>
+
             <!-- Section 2: Problem vs Solution -->
             <section class="space-y-6 pt-4 border-t border-gray-800/60">
                 <div class="grid grid-cols-2 gap-3">
@@ -333,7 +357,7 @@
         const i18n = {
             en: {
                 nav_apply: "Apply Now",
-                hero_badge: "🔥 LIMITED SPOTS • NOW ACCEPTING NEW CLIENTS",
+                hero_badge: "LIMITED SPOTS • NOW ACCEPTING NEW CLIENTS",
                 hero_title1: "RISE ABOVE AVERAGE.",
                 hero_title2: "BECOME ELITE.",
                 hero_sub: "Premium 1-on-1 coaching built for anyone ready to build an elite physique and unshakeable mindset.",
@@ -352,6 +376,14 @@
                 card2_desc: "Form reviews, lifting strategy, and injury prevention.",
                 card3_title: "Habit & Consistency System",
                 card3_desc: "Fix consistency issues and lock in permanent high-performance routines.",
+                step_h1: "HOW IT WORKS",
+                step_h2: "3 SIMPLE STEPS",
+                step1_t: "1. Assessment & Goal Discovery",
+                step1_d: "We analyze your current health status, lifestyle, and targets in detail.",
+                step2_t: "2. Custom Program Design",
+                step2_d: "Tailored workout and nutrition planning designed specifically around your daily routine.",
+                step3_t: "3. Execution & Ongoing Tracking",
+                step3_d: "Continuous check-ins and support ensuring you hit your transformation targets.",
                 prob_title: "WHERE MOST PEOPLE FAIL",
                 p1: "Busy schedule with zero structure",
                 p2: "Starting strong but quitting after 3 weeks",
@@ -378,47 +410,55 @@
             },
             am: {
                 nav_apply: "አሁኑኑ ይመዝገቡ",
-                hero_badge: "🔥 ውስን ቦታዎች • አዳዲስ ደንበኞችን እንቀበላለን",
-                hero_title1: "ሰውነትዎን ይለውጡ",
-                hero_title2: "ህይወትዎን ይለውጡ",
-                hero_sub: "ጠንካራ የሰውነት ቅርፅ እና የማይበገር አስተሳሰብ ለመገንባት ለተዘጋጁ ሰዎች የተዘጋጀ የ1-ለ-1 ስልጠና።",
-                hero_cta: "ለውጥዎን አሁኑኑ ይጀምሩ →",
+                hero_badge: "ውስን ቦታዎች • ምዝገባ ተከፍቷል",
+                hero_title1: "ዛሬ ይጀምሩ",
+                hero_title2: "ለውጥዎን ይመልከቱ",
+                hero_sub: "ቁርጠኛ ለሆኑ ሰዎች የተዘጋጀ የቅርብ ስልጠና፤ ጠንካራ አካል እና አስተሳሰብን በአንድ ላይ ይገንቡ።",
+                hero_cta: "የ1-ለ-1 ስልጠናዎን ይጀምሩ →",
                 hero_sec: "ከእኔ ጋር ለምን ይሰራሉ? ↓",
-                feat_1: "የግል ልምምድ ዕቅድ",
-                feat_2: "የባለሙያ ስልጠና",
-                feat_3: "የማያቋርጥ ድጋፍ",
+                feat_1: "ለእርስዎ የተዘጋጀ ፕሮግራም",
+                feat_2: "የባለሙያ ክትትልና ስልጠና",
+                feat_3: "የዘወትር ድጋፍና ክትትል",
                 sec1_tag: "ከእኔ ጋር ለምን ይሰራሉ?",
-                sec1_h1: "ከስልጠና ፕሮግራም",
-                sec1_h2: "በላይ የሆነ አገልግሎት።",
-                sec1_desc: "እኔ አሰልጣኝዎ ብቻ አይደለሁም — ጠንካራ አካል፣ ፈጣን ትኩረት እና የማይበገር የአእምሮ ጥንካሬ ለመገንባት አጋርዎ ነኝ።",
-                card1_title: "የተዘጋጀ ስልጠና እና አመጋገብ",
-                card1_desc: "ለእርስዎ የተዘጋጀ የስፖርት እና ተለዋዋጭ የምግብ መመሪያ።",
-                card2_title: "የአሰራር ዘዴ እና ቁጥጥር",
-                card2_desc: "የስፖርት አሰራር ግምገማ እና ጉዳትን የመከላከል ስትራቴጂ።",
-                card3_title: "የልማድ እና የጽናት ስርዓት",
-                card3_desc: "የጽናት ክፍተቶችን በማስተካከል ዘላቂ የሆነ ከፍተኛ አፈፃፀም መገንባት።",
+                sec1_h1: "ከስፖርት ፕሮግራም በላይ",
+                sec1_h2: "እውነተኛ የሰውነት ለውጥ",
+                sec1_desc: "ስፖርት መስራት ብቻ ሳይሆን የአኗኗር ዘይቤዎን እና የሰውነት ቅርፅዎን በዘላቂነት እንድይዙ አብሬዎት እሰራለሁ።",
+                card1_title: "የግል ስልጠና እና ምግብ መመሪያ",
+                card1_desc: "ያለ አላስፈላጊ ጫና ውጤታማ የሚያደርግ የምግብና የስፖርት ፕሮግራም።",
+                card2_title: "የስፖርት አሰራር ክትትል",
+                card2_desc: "እያንዳንዱን ልምምድ በትክክለኛው መንገድ መስራትዎ የሚረጋገጥበት ክትትል ።",
+                card3_title: "ዘላቂ ውጤት የሚያስገኝ ስርዓት",
+                card3_desc: "ከእርስዎ ጋር በመሆን ወጥነት ያለው ልማድ እና ዲሲፕሊን እንገነባለን።",
+                step_h1: "የአሰራር ሂደት",
+                step_h2: "በ3 ቀላል ደረጃዎች",
+                step1_t: "1. ግብዎን ማወቅ",
+                step1_d: "የአሁኑን የጤንነት ሁኔታ፣ አኗኗር እና የወደፊት ግብዎን በዝርዝር እንገመግማለን።",
+                step2_t: "2. የግል ፕሮግራም ማዘጋጀት",
+                step2_d: "ከእለት ተእለት ህይወትዎ ጋር የሚሄድ ልዩ የስፖርት እና የካሎሪ እቅድ ይዘጋጃል።",
+                step3_t: "3. መደበኛ ግምገማ እና ውጤት",
+                step3_d: "በቀጣይነት በሚደረግ ክትትል እና ድጋፍ ወደተፈለገው ውጤት እናመራለን።",
                 prob_title: "ብዙ ሰዎች የት ይሳሳታሉ?",
-                p1: "የተጣበበ ጊዜ እና ስርዓት ማጣት",
-                p2: "በጠንካራ ሁኔታ ጀምሮ በ3 ሳምንት ውስጥ ማቆም",
-                p3: "በግምት የሚሰሩ ልምምዶች እና አመጋገብ",
-                sol_title: "የእኛ ልዩ ስርዓት",
-                s1: "ከእርስዎ መርሃ ግብር ጋር የተጣጣመ ስልጠና",
-                s2: "ዕለታዊ ስርዓት እና የቅርብ ክትትል",
-                s3: "ግልጽ እና ውጤታማ የእድገት መንገድ",
-                pil_h1: "ለእውነተኛ ውጤት የተገነባ።",
-                pil_h2: "በተግባር የተረጋገጠ።",
+                p1: "የተጣበበ ጊዜ እና ግልጽ ስርዓት ማጣት",
+                p2: "በሞቅታ ጀምሮ በሳምንታት ውስጥ ተስፋ መቁረጥ",
+                p3: "ያለ በቂ እውቀት በግምት መስራት",
+                sol_title: "የእኛ ልዩ አሰራር",
+                s1: "ከፕሮግራምዎ ጋር የሚሄድ የግል ስልጠና",
+                s2: "የዕለት ተዕለት ስርዓት እና የቅርብ ክትትል",
+                s3: "በውጤት የተደገፈ ግልጽ እድገት",
+                pil_h1: "ለእውነተኛ ውጤት የተገነባ",
+                pil_h2: "በተግባር የተረጋገጠ",
                 pil1_t: "ትክክለኛነት",
                 pil1_d: "እያንዳንዱ ልምምድ እና ምግብ ግልጽ አላማ አለው።",
                 pil2_t: "በመረጃ የተደገፈ",
-                pil2_d: "በመረጃ ላይ የተመሰረተ ክትትል እና ማስተካካያ።",
-                pil3_t: "ብቃት",
-                pil3_d: "ጂም ውስጥ ሳይውሉ ውጤታማ የጡንቻ እና የቅባት ቅነሳ።",
-                pil4_t: "አስተሳሰብ",
-                pil4_d: "ዲሲፕሊን እና የአእምሮ ጥንካሬን መገንባት።",
-                cta_h1: "ጊዜዎ አሁን ነው።",
-                cta_h2: "ብቁ ይሁኑ።",
-                cta_sub: "ወደ ዘላቂ ለውጥ የመጀመሪያውን እርምጃ ይውሰዱ። አሁኑኑ ይመዝገቡ።",
-                cta_btn: "ለውጥዎን አሁኑኑ ይጀምሩ →",
+                pil2_d: "በየጊዜው በሚደረግ ክትትል እና ምዘና የሚስተካከል አሰራር።",
+                pil3_t: "ውጤታማነት",
+                pil3_d: "ጊዜዎን ሳያባክኑ ከፍተኛ ውጤት የሚያስገኝ ስልጠና።",
+                pil4_t: "የአእምሮ ጥንካሬ",
+                pil4_d: "ጠንካራ ዲሲፕሊን እና የማይበገር አመለካከት መገንባት።",
+                cta_h1: "ለለውጥ ዝግጁ ነዎት?",
+                cta_h2: "አዲሱን ማንነትዎን አብረን እንገንባ",
+                cta_sub: "ዛሬ የመጀመሪያውን እርምጃ ይውሰዱ፤ አሁኑኑ ይመዝገቡ።",
+                cta_btn: "የ1-ለ-1 ስልጠናዎን ይጀምሩ →",
                 cta_foot: "የእርስዎ የለውጥ ጉዞ እዚህ ይጀምራል"
             }
         };
