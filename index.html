@@ -78,7 +78,7 @@
             border-color: rgba(255, 255, 255, 0.3);
         }
 
-        /* Accordion marker removal */
+        /* Accordion transition */
         details summary::-webkit-details-marker {
             display: none;
         }
@@ -104,7 +104,7 @@
         <div class="laser-streak -top-10 -left-1/2"></div>
         <div class="laser-streak top-1/3 -left-1/3"></div>
 
-        <!-- 1. HEADER -->
+        <!-- 1. HEADER (Clean Brand & Sticky Navigation) -->
         <header class="flex justify-between items-center px-6 py-4 relative z-30 sticky top-0 bg-[#08080a]/90 backdrop-blur-md border-b border-gray-800/60">
             <a href="#" class="font-heading text-2xl font-black tracking-wider text-white">
                 KALID
@@ -161,22 +161,13 @@
                     <a href="https://forms.gle/pCHjT2QQWDwabJYQ9" target="_blank" rel="noopener noreferrer" data-key="hero_cta" class="btn-neon w-full py-3.5 px-6 rounded-full font-extrabold text-center uppercase tracking-wide flex items-center justify-center gap-2 text-xs">
                         START YOUR TRANSFORMATION →
                     </a>
-                </div>
-
-                <!-- HERO PHOTO: Competitive Proof (Front Pose with Medal) -->
-                <div class="relative glass-card rounded-2xl overflow-hidden border border-red-500/30 shadow-2xl mt-4">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#08080a] via-transparent to-transparent z-10 pointer-events-none"></div>
-                    <img src="image_2.png" alt="Kalid Competition Stage" class="w-full h-80 object-cover object-top filter brightness-95 contrast-105">
-                    <div class="absolute bottom-3 left-3 right-3 z-20 flex justify-between items-end">
-                        <div>
-                            <span class="text-[9px] font-extrabold uppercase tracking-widest text-[#FF0033] bg-red-950/80 px-2 py-0.5 rounded border border-red-800/50">STAGE PROVEN</span>
-                            <p class="text-xs font-bold text-white mt-1">4th Place Natural Competitor</p>
-                        </div>
-                    </div>
+                    <a href="#how-it-works" data-key="hero_sec" class="btn-secondary w-full py-3 px-6 rounded-full font-semibold text-gray-300 text-center block text-xs">
+                        SEE HOW IT WORKS ↓
+                    </a>
                 </div>
             </section>
 
-            <!-- 3. WHY WORK WITH ME -->
+            <!-- 3. WHY WORK WITH ME (Humanized Problem Framing) -->
             <section id="why-me" class="space-y-4 pt-4 border-t border-gray-800/60">
                 <div>
                     <div class="flex items-center gap-2 mb-1">
@@ -191,7 +182,7 @@
                     </p>
                 </div>
 
-                <!-- 3 CORE DELIVERABLE CARDS -->
+                <!-- 3 CORE DELIVERABLE CARDS (Consistent Color Scheme) -->
                 <div class="space-y-3">
                     <div class="glass-card rounded-xl p-4 flex items-start gap-3.5">
                         <div class="text-sm font-black text-[#FF0033] font-heading bg-red-950/50 border border-red-800/40 px-2 py-1 rounded-md">01</div>
@@ -219,7 +210,7 @@
                 </div>
             </section>
 
-            <!-- 4. HOW IT WORKS -->
+            <!-- 4. HOW IT WORKS (Consistent Colors across all 3 steps) -->
             <section id="how-it-works" class="space-y-5 pt-4 border-t border-gray-800/60">
                 <div>
                     <h2 class="font-heading text-2xl font-black uppercase leading-tight">
@@ -251,6 +242,7 @@
             <!-- 5. MOST PEOPLE VS THE KALID SYSTEM -->
             <section class="space-y-4 pt-4 border-t border-gray-800/60">
                 <div class="grid grid-cols-2 gap-3">
+                    <!-- Most People -->
                     <div class="glass-card rounded-2xl p-3.5 space-y-2.5 border-red-500/20">
                         <h3 data-key="prob_title" class="font-heading text-[11px] text-[#FF0033] uppercase font-bold tracking-wider">MOST PEOPLE</h3>
                         <ul class="space-y-2 text-[10px] text-gray-400">
@@ -261,6 +253,7 @@
                         </ul>
                     </div>
 
+                    <!-- The Kalid System -->
                     <div class="glass-card rounded-2xl p-3.5 space-y-2.5 border-red-500/20">
                         <h3 data-key="sol_title" class="font-heading text-[11px] text-white uppercase font-bold tracking-wider">THE KALID SYSTEM</h3>
                         <ul class="space-y-2 text-[10px] text-gray-200">
@@ -273,7 +266,68 @@
                 </div>
             </section>
 
-            <!-- 6. WHAT YOU GET -->
+            <!-- 6. PILLARS (Concrete Principles) -->
+            <section class="space-y-4 pt-4 border-t border-gray-800/60">
+                <div>
+                    <h2 class="font-heading text-2xl font-black uppercase leading-tight">
+                        <span data-key="pil_h1">BUILT FOR REAL RESULTS.</span><br><span data-key="pil_h2" class="text-[#FF0033]">NOT JUST PROMISES.</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="glass-card rounded-xl p-3.5 space-y-1">
+                        <h3 data-key="pil1_t" class="font-bold text-xs text-white uppercase">PERSONALIZED</h3>
+                        <p data-key="pil1_d" class="text-[10px] text-gray-400 leading-snug">Your program is engineered specifically around your body and lifestyle.</p>
+                    </div>
+
+                    <div class="glass-card rounded-xl p-3.5 space-y-1">
+                        <h3 data-key="pil2_t" class="font-bold text-xs text-white uppercase">TRACKED</h3>
+                        <p data-key="pil2_d" class="text-[10px] text-gray-400 leading-snug">We measure your numbers and strength metrics instead of relying on guessing.</p>
+                    </div>
+
+                    <div class="glass-card rounded-xl p-3.5 space-y-1">
+                        <h3 data-key="pil3_t" class="font-bold text-xs text-white uppercase">ADAPTABLE</h3>
+                        <p data-key="pil3_d" class="text-[10px] text-gray-400 leading-snug">Your plan adapts continuously as your body, strength, or schedule changes.</p>
+                    </div>
+
+                    <div class="glass-card rounded-xl p-3.5 space-y-1">
+                        <h3 data-key="pil4_t" class="font-bold text-xs text-white uppercase">SUSTAINABLE</h3>
+                        <p data-key="pil4_d" class="text-[10px] text-gray-400 leading-snug">Designed for permanent physique transformation, not a 2-week burst.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. IS THIS COACHING FOR YOU? (Qualification) -->
+            <section class="space-y-4 pt-4 border-t border-gray-800/60">
+                <div class="text-center space-y-1">
+                    <h2 data-key="fit_head" class="font-heading text-2xl font-black uppercase">IS THIS COACHING FOR YOU?</h2>
+                    <p data-key="fit_sub" class="text-[11px] text-gray-400">I only accept clients who are ready to take serious action.</p>
+                </div>
+
+                <div class="space-y-3">
+                    <!-- For You -->
+                    <div class="glass-card rounded-2xl p-4 border-gray-700/60">
+                        <h3 data-key="fit_yes_t" class="text-xs font-black text-white uppercase tracking-wider mb-2.5">IT'S FOR YOU IF:</h3>
+                        <ul class="space-y-2 text-[11px] text-gray-200">
+                            <li class="flex items-start gap-2"><span class="text-[#FF0033]">✓</span> <span data-key="fy1">You are tired of training hard without seeing visible physique changes.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-[#FF0033]">✓</span> <span data-key="fy2">You want a clear, structured plan for training and nutrition.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-[#FF0033]">✓</span> <span data-key="fy3">You want direct 1-on-1 accountability to keep you consistent.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Not For You -->
+                    <div class="glass-card rounded-2xl p-4 border-red-500/30 bg-red-950/10">
+                        <h3 data-key="fit_no_t" class="text-xs font-black text-[#FF0033] uppercase tracking-wider mb-2.5">IT'S NOT FOR YOU IF:</h3>
+                        <ul class="space-y-2 text-[11px] text-gray-400">
+                            <li class="flex items-start gap-2"><span class="text-[#FF0033]">✕</span> <span data-key="fn1">You are looking for a magical 30-day quick fix.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-[#FF0033]">✕</span> <span data-key="fn2">You are not willing to follow a structured plan.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-[#FF0033]">✕</span> <span data-key="fn3">You expect results without puting in consistent effort.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. WHAT YOU GET -->
             <section class="glass-card rounded-3xl p-5 space-y-4 border-gray-700/60">
                 <div class="space-y-1">
                     <span data-key="inc_tag" class="text-[10px] font-bold text-[#FF0033] uppercase tracking-widest">FULL PROGRAM DELIVERABLES</span>
@@ -305,19 +359,11 @@
                 </div>
             </section>
 
-            <!-- 7. MEET YOUR COACH & COMPETITION STORY -->
-            <section class="glass-card rounded-3xl p-5 space-y-4 border-red-500/30 overflow-hidden">
+            <!-- 9. MEET YOUR COACH (Kalid's Personal Credibility Story) -->
+            <section class="glass-card rounded-3xl p-5 space-y-4 border-red-500/30">
                 <div class="space-y-1">
                     <span data-key="about_tag" class="text-[10px] font-bold text-[#FF0033] uppercase tracking-widest">EXPERIENCE & DISCIPLINE</span>
                     <h2 data-key="about_head" class="font-heading text-2xl font-black uppercase">MEET YOUR COACH</h2>
-                </div>
-
-                <!-- STAGE CONDITIONING PHOTO (Side Pose) -->
-                <div class="relative rounded-2xl overflow-hidden border border-red-800/40 my-3">
-                    <img src="image.png" alt="Kalid Stage Conditioning" class="w-full h-72 object-cover object-top filter brightness-90 contrast-105">
-                    <div class="absolute bottom-2 left-2 z-20 bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-lg border border-red-500/30">
-                        <span class="text-[10px] font-black text-white uppercase tracking-wider">PURE CONDITIONING & FOCUS</span>
-                    </div>
                 </div>
 
                 <div class="space-y-3 text-xs text-gray-300 leading-relaxed">
@@ -328,9 +374,18 @@
                         Now I use that real competitive experience to help individuals build an elite physique with a clear plan instead of wasting years guessing.
                     </p>
                 </div>
+
+                <!-- Competitor Timeline Accent -->
+                <div class="bg-gray-900/80 rounded-2xl p-3 border border-gray-800 space-y-2">
+                    <div data-key="about_time_t" class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Competitive Journey</div>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="font-bold text-white">Refined Methodology</span>
+                        <span class="text-[#FF0033] font-extrabold text-[11px]">Proven Results</span>
+                    </div>
+                </div>
             </section>
 
-            <!-- 8. FAQ ACCORDION -->
+            <!-- 10. FAQ ACCORDION -->
             <section class="space-y-4 pt-4 border-t border-gray-800/60">
                 <div>
                     <h2 data-key="faq_head" class="font-heading text-2xl font-black uppercase">QUESTIONS? I'VE GOT YOU.</h2>
@@ -366,7 +421,7 @@
                 </div>
             </section>
 
-            <!-- 9. FINAL CTA BANNER -->
+            <!-- 11. FINAL CTA BANNER -->
             <section class="glass-card rounded-3xl p-6 text-center space-y-4 border-red-500/40">
                 <h2 class="font-heading text-3xl font-black uppercase leading-tight">
                     <span data-key="cta_h1">YOUR TRANSFORMATION</span><br>
@@ -396,6 +451,7 @@
                 hero_title2: "WITHOUT GUESSING.",
                 hero_sub: "Personalized training, nutrition, and accountability built around your body, your lifestyle, and your goals.",
                 hero_cta: "START YOUR TRANSFORMATION →",
+                hero_sec: "SEE HOW IT WORKS ↓",
                 sec1_tag: "THE REAL PROBLEM",
                 sec1_h1: "MORE THAN JUST",
                 sec1_h2: "A WORKOUT PLAN.",
@@ -424,6 +480,26 @@
                 s2: "Personalized nutrition strategy",
                 s3: "Weekly progress tracking",
                 s4: "Unshakeable accountability",
+                pil_h1: "BUILT FOR REAL RESULTS.",
+                pil_h2: "NOT JUST PROMISES.",
+                pil1_t: "PERSONALIZED",
+                pil1_d: "Your program is engineered specifically around your body and lifestyle.",
+                pil2_t: "TRACKED",
+                pil2_d: "We measure your numbers and strength metrics instead of relying on guessing.",
+                pil3_t: "ADAPTABLE",
+                pil3_d: "Your plan adapts continuously as your body, strength, or schedule changes.",
+                pil4_t: "SUSTAINABLE",
+                pil4_d: "Designed for permanent physique transformation, not a 2-week burst.",
+                fit_head: "IS THIS COACHING FOR YOU?",
+                fit_sub: "I only accept clients who are ready to take serious action.",
+                fit_yes_t: "IT'S FOR YOU IF:",
+                fy1: "You are tired of training hard without seeing visible physique changes.",
+                fy2: "You want a clear, structured plan for training and nutrition.",
+                fy3: "You want direct 1-on-1 accountability to keep you consistent.",
+                fit_no_t: "IT'S NOT FOR YOU IF:",
+                fn1: "You are looking for a magical 30-day quick fix.",
+                fn2: "You are not willing to follow a structured plan.",
+                fn3: "You expect results without puting in consistent effort.",
                 inc_tag: "FULL PROGRAM DELIVERABLES",
                 inc_head: "YOUR COACHING INCLUDES",
                 inc1: "Personalized Strength & Hypertrophy Program",
@@ -436,6 +512,7 @@
                 about_head: "MEET YOUR COACH",
                 about_p1: "I'm Kalid. I've spent years training, competing, learning, making mistakes, and refining what actually works in physique transformation.",
                 about_p2: "Now I use that real competitive experience to help individuals build an elite physique with a clear plan instead of wasting years guessing.",
+                about_time_t: "Competitive Journey",
                 faq_head: "QUESTIONS? I'VE GOT YOU.",
                 q1: "Do I need gym experience?",
                 a1: "No. Your program is customized entirely to your current level, whether you are a beginner or experienced.",
@@ -456,6 +533,7 @@
                 hero_title2: "ያለ ምንም ግምት።",
                 hero_sub: "ለእርስዎ አካል፣ አኗኗር እና ግብ የሚመች የግል ስልጠና፣ አመጋገብ እና የቅርብ ክትትል ስርዓት።",
                 hero_cta: "የ1-ለ-1 ስልጠናዎን ይጀምሩ →",
+                hero_sec: "የአሰራር ሂደቱን ይመልከቱ ↓",
                 sec1_tag: "ዋናው ችግር",
                 sec1_h1: "ከስፖርት ፕሮግራም በላይ",
                 sec1_h2: "እውነተኛ የሰውነት ለውጥ",
@@ -484,6 +562,26 @@
                 s2: "ለእርስዎ የተበጀ የምግብ ስርዓት",
                 s3: "የሳምንታዊ እድገት ክትትል",
                 s4: "የማይበገር የዲሲፕሊን ስርዓት",
+                pil_h1: "ለእውነተኛ ውጤት የተገነባ",
+                pil_h2: "በተግባር የተረጋገጠ",
+                pil1_t: "የተበጀ (PERSONALIZED)",
+                pil1_d: "ፕሮግራሙ ሙሉ በሙሉ ለእርስዎ አካል እና አኗኗር የተዘጋጀ ነው።",
+                pil2_t: "በመረጃ የተደገፈ (TRACKED)",
+                pil2_d: "በግምት ሳይሆን የሰውነትዎን እና የጥንካሬዎን እድገት በመለካት እንሰራለን።",
+                pil3_t: "ተለዋዋጭ (ADAPTABLE)",
+                pil3_d: "ሰውነትዎ እና ፕሮግራምዎ ሲቀያየር አሰራሩም አብሮ ይስተካከላል።",
+                pil4_t: "ዘላቂ (SUSTAINABLE)",
+                pil4_d: "ለ2 ሳምንት ሞቅታ ሳይሆን ለዘላቂ የሰውነት ለውጥ የተነደፈ።",
+                fit_head: "ይህ ስልጠና ለእርስዎ ነው?",
+                fit_sub: "እውነተኛ ለውጥ ለማምጣት ቁርጠኛ የሆኑ ሰዎችን ብቻ እንቀበላለን።",
+                fit_yes_t: "ለእርስዎ የሚሆነው:",
+                fy1: "ደክመው ውጤት ማጣት ሰልችቶዎት ከሆነ።",
+                fy2: "ግልጽ እና የተዋቀረ የስፖርት እና የምግብ እቅድ ከፈለጉ።",
+                fy3: "ወጥ የሆነ ዲሲፕሊን የሚያስይዝ የቅርብ አሰልጣኝ ከፈለጉ።",
+                fit_no_t: "ለእርስዎ የማይሆነው:",
+                fn1: "የ30 ቀን ተአምራዊ መፍትሔ የሚፈልጉ ከሆነ።",
+                fn2: "የተዘጋጀውን መመሪያ ለመከተል ፈቃደኛ ካልሆኑ።",
+                fn3: "ያለ ጠንካራ ስራ ውጤት የሚጠብቁ ከሆነ።",
                 inc_tag: "የስልጠናው ጥቅል",
                 inc_head: "የስልጠናው ጥቅል የሚያካትታቸው",
                 inc1: "ለእርስዎ የተበጀ የጥንካሬ እና የጡንቻ ግንባታ ፕሮግራም",
@@ -496,6 +594,7 @@
                 about_head: "አሰልጣኝዎን ይወቁ",
                 about_p1: "እኔ ካሊድ ነኝ። በሰውነት ግንባታ እና በፊቲነስ ዘርፍ ብዙ አመታትን በስልጠና፣ በውድድር እና ልምድ በማካበት አሳልፌአለሁ።",
                 about_p2: "አሁን ያንን እውነተኛ የውድድር ልምዴን በመጠቀም ሰዎች በግምት ጊዜያቸውን ሳይጨርሱ በግልጽ እቅድ የፈለጉትን የሰውነት ቅርፅ እንዲገነቡ እረዳለሁ።",
+                about_time_t: "የውድድር ጉዞ",
                 faq_head: "ጥያቄዎች አልዎት?",
                 q1: "የጂም ልምድ ያስፈልገኛል?",
                 a1: "አያስፈልግም። ጀማሪም ሆኑ ልምድ ያለው ሰው፣ ፕሮግራሙ ሙሉ በሙሉ ለእርስዎ ደረጃ ተበጅቶ ይዘጋጃል።",
@@ -529,6 +628,7 @@
             });
         }
 
+        // Close language dropdown on outside click
         window.addEventListener('click', function(e) {
             const btn = document.getElementById('langToggleBtn');
             const dropdown = document.getElementById('langDropdown');
